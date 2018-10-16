@@ -25,15 +25,38 @@ body {
   }
 }
 
-.flexwrapper__contactlist {
-  display: list-item;
+.flexwrapper__contact {
+
+  display: flex;
+
+
 
   @media screen and (min-width: $width-x-small) {
-      flex-basis: 100%
+    //  flex-basis: 100%
   }
 
   @media screen and (min-width: $width-small) {
-      flex-basis: 40%
+      //flex-basis: 28%
   }
+}
+
+.flexwrapper__contact--icon {
+  flex-direction: column;
+  //border: 2px red solid;
+  height: 80px;
+  z-index: $z-index-default;
+  position: relative;
+  left: 35px;
+  top: 18px;
+}
+
+.flexwrapper__contact--list {
+  //border: 2px blue solid;
+  list-style: none;
+}
+
+.flexwrapper__contact--location {
+position: relative;
+left: 4px;
 
 }
