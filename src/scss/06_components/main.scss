@@ -1,14 +1,39 @@
-.header {
+body {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.flexwrapper {
   display: flex;
-  flex-wrap: nowrap;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 
-
+  @media screen and (min-width: $width-x-small) {
+    justify-content: space-between;
+  }
 }
-.header__logo {
 
+.flexwrapper__logo {
+  margin: $spacing-small;
 }
 
-.header__menu {
+.flexwrapper__menu {
+  display: visible;
+
+  @media screen and (min-width: $width-small) {
+    display: none;
+  }
+}
+
+.flexwrapper__contactlist {
+  display: list-item;
+
+  @media screen and (min-width: $width-x-small) {
+      flex-basis: 100%
+  }
+
+  @media screen and (min-width: $width-small) {
+      flex-basis: 40%
+  }
 
 }
