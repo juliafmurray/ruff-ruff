@@ -1,0 +1,32 @@
+body {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.flexwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @media screen and (min-width: $width-x-small) {
+    justify-content: space-between;
+  }
+}
+
+.flexwrapper__logo {
+  margin: $spacing-small;
+}
+
+.flexwrapper__menu {
+  display: visible;
+
+  @media screen and (min-width: $width-small - 51) {
+    display: none;
+  }
+}
+
+.flexwrapper__contactlist {
+  list-style: none;
+  line-height: $line-height-heading;
+  margin: $spacing-small;
+}
