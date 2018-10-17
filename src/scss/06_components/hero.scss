@@ -1,32 +1,10 @@
-body {
-  margin: 0 auto;
-  max-width: 1080px;
-}
-
-.flexwrapper {
+.c-flex-nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-
-  @media screen and (min-width: $width-x-small) {
-    justify-content: space-between;
-  }
+  background-color: $color-black-secondary;
 }
 
-.flexwrapper__logo {
-  margin: $spacing-small;
-}
-
-.flexwrapper__menu {
-  display: visible;
-
-  @media screen and (min-width: $width-small - 51) {
-    display: none;
-  }
-}
-
-.flexwrapper__contactlist {
-  list-style: none;
-  line-height: $line-height-heading;
-  margin: $spacing-small;
+.c-flex-nav__link {
+  width: 10%;
+  margin: $spacing-x-small;
+  text-align: center;
 }
