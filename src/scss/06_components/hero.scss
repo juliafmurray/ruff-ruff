@@ -1,10 +1,22 @@
 .c-flex-nav {
   display: flex;
   background-color: $color-black-secondary;
+
+  z-index: 1;
+  position: relative;
+  top: 40px;
 }
 
 .c-flex-nav__link {
-  width: 10%;
+  width: 20%;
   margin: $spacing-x-small;
   text-align: center;
+  color: $color-white;
+
+}
+
+.hero {
+background-color: $color-primary;
+background-image: url('https://i1.vvttw.com/2018/0928/19/oelzhamj0ai.jpg');
+width: 100%;
 }
