@@ -1,22 +1,46 @@
-.c-flex-nav {
-  display: flex;
-  background-color: $color-black-secondary;
 
-  z-index: 1;
-  position: relative;
-  top: 40px;
+.c-hero {
+  display: grid;
+  grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+
 }
 
-.c-flex-nav__link {
-  width: 20%;
-  margin: $spacing-x-small;
-  text-align: center;
+.c-hero__img {
+  grid-column-start: 1;
+  grid-column-end: 12;
+border: 2px red solid;
+position: relative;
+}
+
+.c-hero__cta {
+  font-weight: $font-weight-bold;
+  border: 2px red solid;
   color: $color-white;
+  line-height: $line-height-heading;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
 
-}
+  @media screen and (min-width: 320px) {
+    font-size: $font-size-heading-large;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    bottom: 4.5em;
+  }
 
-.hero {
-background-color: $color-primary;
-background-image: url('https://i1.vvttw.com/2018/0928/19/oelzhamj0ai.jpg');
-width: 100%;
+  @media screen and (min-width: 500px) {
+    font-size: $font-size-heading-xx-large;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    bottom: 4.5em;
+
+    }
+
+    @media screen and (min-width: 960px) {
+      font-size: $font-size-heading-xxx-large;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      bottom: 4.5em;
+
+  }
 }
