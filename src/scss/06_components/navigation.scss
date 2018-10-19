@@ -1,7 +1,6 @@
 
 .c-nav-hero__container {
   position: relative;
-
 }
 
 .c-lg-nav__background {
@@ -15,10 +14,12 @@
   @media screen and (min-width: $width-x-small) {
     display: none;
   }
+
   @media screen and (min-width: $width-medium) {
     display: flex;
   }
 }
+
 .c-lg-nav__list {
   display: flex;
   align-self: flex-start;
@@ -32,19 +33,17 @@
 
   @media screen and (min-width: $width-x-small) {
     display: none;
-  }
+    }
 
   @media screen and (min-width: $width-medium) {
     width: 100%;
     padding-right: 2%;
     display: flex;
+    }
 
-  }
   @media screen and (min-width: $width-large) {
     width: 80%;
     }
-
-
 }
 
 .c-lg-nav__list--link {
@@ -57,3 +56,33 @@
   background-color: $color-white;
   font-weight: $font-weight-bold;
 }
+
+//sm navigation
+.c-sm-nav {
+  border: 2px red solid;
+  display: flex;
+  padding: 20px;
+  }
+
+  .c-sm-nav__list {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-text-large;
+    line-height: $line-height-tall + 0.5;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px purple solid;
+    width: 50%;
+    }
+
+.c-sm-nav__anchor {
+  border: 2px blue solid;
+  justify-content: flex-end;
+  width: 50%;
+  text-align: right;
+  }
+
+
+
+.c-sm-nav__list--active {
+  text-decoration: underline;
+  }
