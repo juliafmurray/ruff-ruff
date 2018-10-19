@@ -62,6 +62,14 @@
   border: 2px red solid;
   display: flex;
   padding: 20px;
+
+  @media screen and (min-width: $width-x-small) {
+    display: flex;
+    }
+
+  @media screen and (min-width: $width-small) {
+    display: none;
+    }
   }
 
   .c-sm-nav__list {
@@ -80,8 +88,6 @@
   width: 50%;
   text-align: right;
   }
-
-
 
 .c-sm-nav__list--active {
   text-decoration: underline;
