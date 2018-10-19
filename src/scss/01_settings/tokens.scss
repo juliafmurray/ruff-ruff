@@ -2,7 +2,7 @@
 
 $color-background: #FFF;
 
-$color-primary: #27A8E0;
+$color-primary: #1fae9b;
 $color-primary-hover: darken($color-primary, 10%);
 $color-secondary: #626E7A;
 $color-secondary-hover: darken($color-secondary, 10%);
@@ -16,7 +16,6 @@ $color-success: #58966B;
 $color-success-hover: darken($color-success, 10%);
 $color-error: #C81905;
 $color-error-hover: darken($color-error, 10%);
-
 $color-border: lighten($color-accent, 10%);
 $color-border-input: rgba($color-black, .15);
 $color-border-input-hover: rgba($color-black, .30);
