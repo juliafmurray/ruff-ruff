@@ -1,4 +1,13 @@
-a:active {
-    text-decoration-color: $color-black;
+
+
+
+
+a {
+  color: $color-white;
+  text-decoration: none;
+}
+
+a:visited {
+    color: $color-black;
     background-color: $color-white;
 }

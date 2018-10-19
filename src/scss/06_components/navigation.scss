@@ -1,0 +1,59 @@
+
+.c-nav-hero__container {
+  position: relative;
+
+}
+
+.c-lg-nav__background {
+  background-color: $color-black-secondary;
+  position: absolute;
+  z-index: 1;
+  border: 2px blue solid;
+  height: 50px;
+  width: 100%;
+
+  @media screen and (min-width: $width-x-small) {
+    display: none;
+  }
+  @media screen and (min-width: $width-medium) {
+    display: flex;
+  }
+}
+.c-lg-nav__list {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  height: 50px;
+  padding-left: 2%;
+  border: 2px red solid;
+  position: absolute;
+  z-index: 2;
+  justify-content: space-between;
+
+  @media screen and (min-width: $width-x-small) {
+    display: none;
+  }
+
+  @media screen and (min-width: $width-medium) {
+    width: 100%;
+    padding-right: 2%;
+    display: flex;
+
+  }
+  @media screen and (min-width: $width-large) {
+    width: 80%;
+    }
+
+
+}
+
+.c-lg-nav__list--link {
+  color: $color-white;
+}
+
+.c-lg-nav__list--active {
+  padding: 0 5px;
+  border-radius: $border-radius-small;
+  background-color: $color-white;
+  font-weight: $font-weight-bold;
+}
