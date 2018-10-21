@@ -1,0 +1,88 @@
+.c-contact {
+  border: 1px red solid;
+  background-color: $color-dark;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.c-contact__map {
+  border: 1px red solid;
+  @media screen and (min-width: $width-x-small) {
+    width: 100%;
+    padding: 6%;
+    }
+  @media screen and (min-width: $width-large) {
+    width: 50%;
+    padding: 2%;
+    }
+}
+
+.c-contact__form--heading {
+    width: 100%;
+    border: 1px purple solid;
+
+
+    @media screen and (min-width: $width-x-small) {
+      height: 10%;
+      }
+
+    @media screen and (min-width: $width-large) {
+      height: 10%;
+      }
+
+}
+
+.c-contact__map--heading {
+    width: 100%;
+    border: 1px red solid;
+    margin-bottom: 2%;
+}
+
+.c-contact__form {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px blue solid;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+  padding: 20px;
+
+  @media screen and (min-width: $width-x-small) {
+    width: 100%;
+    padding: 2%;
+    }
+
+  @media screen and (min-width: $width-large) {
+    width: 50%;
+    padding: 2%;
+    }
+}
+
+.c-contact__form--field {
+  border: 1px red solid;
+
+  @media screen and (min-width: $width-x-small) {
+    width: 100%;
+    }
+
+  @media screen and (min-width: $width-medium) {
+    width: 30%;
+    }
+
+  @media screen and (min-width: $width-large) {
+    width: 30%;
+    }
+}
+
+.c-contact__form--area {
+  border: 1px red solid;
+  width: 100%;
+}
+
+.c-contact__form--button {
+  border: 1px red solid;
+  height: 45px;
+  margin-bottom: 20px;
+}
