@@ -4,7 +4,6 @@
   border: 2px red solid;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
   position: relative;
 }
 
@@ -20,9 +19,11 @@
   z-index: 1;
   width: 20%;
 
+
   @media screen and (min-width: $width-x-small) {
     font-size: $font-size-heading-large;
     }
+  }
 
   @media screen and (min-width: $width-small) {
     font-size: $font-size-heading-xx-large;
@@ -35,4 +36,11 @@
 
 .c-hero__img {
   width: 100%;
+}
+
+.c-hero__img {
+width: 100%;
+position: relative;
+
+
 }
