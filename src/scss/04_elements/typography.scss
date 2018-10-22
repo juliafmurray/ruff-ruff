@@ -1,6 +1,7 @@
 html {
   font-family: $font-family;
   line-height: $line-height-text;
+  font-size: $font-size-text-large;
 }
 
 h1 {
@@ -32,11 +33,14 @@ h4 {
 }
 
 p {
-  color: $color-primary;
-  font-size: $font-size-text-medium;
+  font-family: $font-weight-light;
+  font-size: $font-size-text-x-large;
+  color: $color-black;
 }
 
 small {
   color: $color-accent;
   font-size: $font-size-heading-x-small;
+  font-weight: $font-weight-regular;
+  text-transform: uppercase;
 }

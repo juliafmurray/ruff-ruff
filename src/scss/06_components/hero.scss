@@ -1,0 +1,37 @@
+
+.c-hero {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px red solid;
+  position: relative;
+  align-items: flex-end;
+}
+
+.c-hero__cta {
+  font-weight: $font-weight-bold;
+  border: 2px red solid;
+  color: $color-white;
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+
+
+  @media screen and (min-width: 320px) {
+    font-size: $font-size-heading-large;
+  }
+
+  @media screen and (min-width: 500px) {
+    font-size: $font-size-heading-xx-large;
+    }
+
+    @media screen and (min-width: 960px) {
+      font-size: $font-size-heading-xxx-large;
+  }
+}
+
+.c-hero__img {
+width: 100%;
+position: relative;
+
+
+}

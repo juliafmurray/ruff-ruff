@@ -2,21 +2,20 @@
 
 $color-background: #FFF;
 
-$color-primary: #27A8E0;
+$color-primary: #1fae9b;
 $color-primary-hover: darken($color-primary, 10%);
 $color-secondary: #626E7A;
 $color-secondary-hover: darken($color-secondary, 10%);
 $color-white: #FFF;
 $color-black: #070707;
 $color-black-hover: darken($color-black, 10%);
-$color-black-secondary: rgba($color-black, .5);
-$color-accent: #CCC;
+$color-black-secondary: rgba($color-black, .66);
+$color-accent: #7B7B7B;
 $color-accent-hover: darken($color-accent, 10%);
 $color-success: #58966B;
 $color-success-hover: darken($color-success, 10%);
 $color-error: #C81905;
 $color-error-hover: darken($color-error, 10%);
-
 $color-border: lighten($color-accent, 10%);
 $color-border-input: rgba($color-black, .15);
 $color-border-input-hover: rgba($color-black, .30);
@@ -28,13 +27,11 @@ $color-mask: rgba($color-black, .3);
 
 // Fonts
 
-$font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-$font-family-monospace: monospace;
+$font-family: 'Lato', sans-serif;
 $font-weight-light: 300;
 $font-weight-regular: 400;
-$font-weight-semibold: 600;
 $font-weight-bold: 700;
-$font-weight-extrabold: 800;
+$font-weight-extrabold: 900;
 
 // Font Size
 
@@ -42,10 +39,10 @@ $font-size-heading-xx-small: .825rem;
 $font-size-heading-x-small: 1rem;
 $font-size-heading-small: 1.25rem;
 $font-size-heading-medium: 1.5rem;
-$font-size-heading-large: 2.25rem;
+$font-size-heading-large: 2.5rem;
 $font-size-heading-x-large: 3rem;
 $font-size-heading-xx-large: 4.5rem;
-$font-size-heading-xxx-large: 10rem;
+$font-size-heading-xxx-large: 6rem;
 
 $font-size-text-xx-small: .5rem;
 $font-size-text-x-small: .625rem;
@@ -56,7 +53,7 @@ $font-size-text-x-large: 1.15rem;
 
 // Line Height
 
-$line-height-heading: 1.25;
+$line-height-heading: 0.9;
 $line-height-text: 1.5;
 $line-height-tall: 2.2;
 
@@ -123,3 +120,9 @@ $z-index-default: 1;
 $z-index-modal: 8000;
 $z-index-spinner: 9000;
 $z-index-toast: 10000;
+
+// width
+$width-x-small: 320px;
+$width-small: 500px;
+$width-medium: 768px;
+$width-large: 960px;

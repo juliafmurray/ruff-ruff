@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="42" viewBox="0 0 40 42">
+  <defs>
+    <rect id="hamburger-b" width="40" height="42" rx="3"/>
+    <filter id="hamburger-a" width="110%" height="109.5%" x="-2.5%" y="-2.4%" filterUnits="objectBoundingBox">
+      <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.188773777 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#hamburger-a)" xlink:href="#hamburger-b"/>
+    <use fill="#1FAE9B" xlink:href="#hamburger-b"/>
+    <text fill="#FFF" font-family="Lato-Bold, Lato" font-size="8" font-weight="bold">
+      <tspan x="8" y="36">MENU</tspan>
+    </text>
+    <path fill="#FFF" fill-rule="nonzero" d="M31.8857143 14.2L8.11428571 14.2C7.08914286 14.2 7 15.0046 7 16 7 16.9954 7.08914286 17.8 8.11428571 17.8L31.8857143 17.8C32.9108571 17.8 33 16.9954 33 16 33 15.0046 32.9108571 14.2 31.8857143 14.2zM31.8857143 21.4L8.11428571 21.4C7.08914286 21.4 7 22.2046 7 23.2 7 24.1954 7.08914286 25 8.11428571 25L31.8857143 25C32.9108571 25 33 24.1954 33 23.2 33 22.2046 32.9108571 21.4 31.8857143 21.4zM8.11428571 10.6L31.8857143 10.6C32.9108571 10.6 33 9.7954 33 8.8 33 7.8046 32.9108571 7 31.8857143 7L8.11428571 7C7.08914286 7 7 7.8046 7 8.8 7 9.7954 7.08914286 10.6 8.11428571 10.6z"/>
+  </g>
+</svg>
