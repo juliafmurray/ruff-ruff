@@ -1,0 +1,65 @@
+.c-contact {
+  background-color: $color-dark;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-contact__map {
+  @media screen and (min-width: $width-x-small) {
+    padding: 4%;
+    width: 100%;
+    }
+
+  @media screen and (min-width: $width-large) {
+    padding: 4%;
+    width: 50%;
+    }
+}
+
+.c-contact__form--heading {
+    width: 100%;
+}
+
+.c-contact__map--heading {
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.c-contact__form {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 4%;
+
+  @media screen and (min-width: $width-x-small) {
+    width: 100%;
+    }
+
+  @media screen and (min-width: $width-large) {
+    width: 50%;
+    }
+}
+
+.c-contact__form--field {
+  @media screen and (min-width: $width-x-small) {
+    width: 100%;
+    }
+
+  @media screen and (min-width: $width-medium) {
+    width: 30%;
+    }
+
+  @media screen and (min-width: $width-large) {
+    width: 30%;
+    }
+}
+
+.c-contact__form--area {
+  width: 100%;
+}
+
+.c-contact__form--button {
+  margin-bottom: 4%;
+}
