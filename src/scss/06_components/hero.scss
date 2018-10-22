@@ -1,46 +1,38 @@
 
 .c-hero {
-  display: grid;
-  grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
-
-}
-
-.c-hero__img {
-  grid-column-start: 1;
-  grid-column-end: 12;
-border: 2px red solid;
-position: relative;
+  align-items: flex-end;
+  border: 2px red solid;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
 }
 
 .c-hero__cta {
-  font-weight: $font-weight-bold;
   border: 2px red solid;
+
   color: $color-white;
+  font-weight: $font-weight-bold;
   line-height: $line-height-heading;
-  padding: 20px;
-  position: relative;
+  position: absolute;
+  bottom: 2px;
+  left: 20px;
   z-index: 1;
+  width: 20%;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: $width-x-small) {
     font-size: $font-size-heading-large;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    bottom: 4.5em;
-  }
-
-  @media screen and (min-width: 500px) {
-    font-size: $font-size-heading-xx-large;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    bottom: 4.5em;
-
     }
 
-    @media screen and (min-width: 960px) {
-      font-size: $font-size-heading-xxx-large;
-      grid-column-start: 1;
-      grid-column-end: 4;
-      bottom: 4.5em;
+  @media screen and (min-width: $width-small) {
+    font-size: $font-size-heading-xx-large;
+    }
 
-  }
+    @media screen and (min-width: $width-large) {
+    font-size: $font-size-heading-xxx-large;
+    }
+}
+
+.c-hero__img {
+  width: 100%;
 }
