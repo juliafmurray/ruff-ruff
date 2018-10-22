@@ -1,13 +1,10 @@
 .c-contact {
-  //border: 1px red solid;
   background-color: $color-dark;
   display: flex;
   flex-wrap: wrap;
 }
 
 .c-contact__map {
-  //border: 1px red solid;
-
   @media screen and (min-width: $width-x-small) {
     padding: 4%;
     width: 100%;
@@ -20,19 +17,16 @@
 }
 
 .c-contact__form--heading {
-    //border: 1px purple solid;
     width: 100%;
 }
 
 .c-contact__map--heading {
-    //border: 1px red solid;
     margin-bottom: 2%;
     width: 100%;
 }
 
 .c-contact__form {
   align-items: flex-start;
-  //border: 1px blue solid;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -49,8 +43,6 @@
 }
 
 .c-contact__form--field {
-  //border: 1px red solid;
-
   @media screen and (min-width: $width-x-small) {
     width: 100%;
     }
@@ -65,11 +57,9 @@
 }
 
 .c-contact__form--area {
-  //border: 1px red solid;
   width: 100%;
 }
 
 .c-contact__form--button {
-  //border: 1px red solid;
   margin-bottom: 4%;
 }
