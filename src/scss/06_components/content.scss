@@ -30,6 +30,9 @@
   font-weight: $font-weight-regular;
   color: $color-primary;
   font-size: $font-size-text-x-large;
+  position: relative;
+  padding-left: $spacing-medium;
+  border: 1px solid;
 
   @media screen and (min-width: $width-x-small) {
     width: 100%;
@@ -48,6 +51,13 @@
 }
 
 .c-content__list--item {
+  &:before {
+    content: url('../assets/paw.svg');
+    border: 1px solid;
+    position: absolute;
+    left: 0;
+
+  }
   @media screen and (min-width: $width-x-small) {
     padding-bottom: 5%;
   }
