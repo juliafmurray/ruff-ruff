@@ -1,40 +1,35 @@
 
 .c-hero {
-  align-items: flex-end;
-  border: 2px red solid;
   display: flex;
   flex-wrap: wrap;
+  border: 2px red solid;
   position: relative;
+  align-items: flex-end;
 }
 
 .c-hero__cta {
-  border: 2px red solid;
-
-  color: $color-white;
   font-weight: $font-weight-bold;
-  line-height: $line-height-heading;
+  border: 2px red solid;
+  color: $color-white;
   position: absolute;
-  bottom: 2px;
-  left: 20px;
   z-index: 1;
-  width: 20%;
+  bottom: 20px;
 
 
-  @media screen and (min-width: $width-x-small) {
+  @media screen and (min-width: 320px) {
     font-size: $font-size-heading-large;
-    }
   }
 
-  @media screen and (min-width: $width-small) {
+  @media screen and (min-width: 500px) {
     font-size: $font-size-heading-xx-large;
     }
 
-    @media screen and (min-width: $width-large) {
+    @media screen and (min-width: 960px) {
     font-size: $font-size-heading-xxx-large;
     }
 }
 
 .c-hero__img {
   width: 100%;
-}
 
+}

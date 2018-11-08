@@ -1,48 +1,42 @@
 
 .c-content {
   display: flex;
-  font-weight: $font-weight-light;
+  padding: 20px 100px;
   justify-content: flex-start;
+  font-weight: $font-weight-light;
 
     @media screen and (min-width: $width-x-small) {
       flex-wrap: wrap;
-      }
+    }
 
     @media screen and (min-width: $width-large){
       flex-wrap: nowrap;
-      }
+    }
 }
 
 .c-content__intro {
     @media screen and (min-width: $width-x-small) {
       width: 100%;
-      padding: 2%;
-      }
+    }
 
     @media screen and (min-width: $width-large){
       width: 50%;
-      }
+    }
+
+
   }
 
 .c-content__list {
-  color: $color-primary;
-  font-size: $font-size-text-x-large;
-  font-weight: $font-weight-regular;
-  line-height: $line-height-text;
-
+line-height: $line-height-text;
+font-size: $font-size-text-x-large;
+font-weight: $font-weight-regular;
+color: $color-primary;
   @media screen and (min-width: $width-x-small) {
-    padding: 2%;
     width: 100%;
-    }
+  }
 
   @media screen and (min-width: $width-large){
     width: 50%;
-    }
-}
-
-.c-content__list--item {
-  background-image: url('/assets/paw.svg');
-  background-repeat: no-repeat;
-  padding-left: 5%;
-
+    padding-left: 5%;
+  }
 }
