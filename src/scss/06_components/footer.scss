@@ -1,5 +1,6 @@
 .c-footer__social {
   display: flex;
+  padding-top: 7px;
   //border: 1px green solid;
 
   @media screen and (min-width: $width-x-small) {
@@ -16,15 +17,12 @@
 }
 
 .c-footer__social--cta {
-  //border: 1px blue solid;
   margin-right: 1%;
   font-weight: $font-weight-bold;
   font-size: $font-size-text-x-large;
 }
 
 .c-footer__social--icons {
-  //border: 1px orange solid;
-
   @media screen and (min-width: $width-medium) {
     justify-content: flex-end;
   }
@@ -32,7 +30,7 @@
 
 .c-footer__copyright {
 display: flex;
-//padding: 1%;
+padding-top: 10px;
 font-weight: $font-weight-light;
 //border: 1px blue solid;
 
@@ -47,9 +45,10 @@ font-weight: $font-weight-light;
 
 .c-footer {
   display: flex;
-  padding: 1%;
+  padding: 0 4% 0 4% ;
   @media screen and (min-width: $width-x-small) {
     flex-wrap: wrap;
+    padding-bottom: 5%;
   }
 
   @media screen and (min-width: $width-medium) {

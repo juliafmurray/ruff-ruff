@@ -15,6 +15,7 @@
 .c-flexwrapper__menu {
   display: visible;
   justify-content: flex-end;
+  padding: 10px 10px 0 0;
 
   @media screen and (min-width: $width-medium) {
     display: none;
@@ -62,7 +63,6 @@
 .c-flexwrapper__contactlist--item3 {
   &:before {
     content: url('../assets/clock.svg');
-    //border: red 1px solid;
     left: 0;
     position: absolute;
     padding: 4px 0 0 0;

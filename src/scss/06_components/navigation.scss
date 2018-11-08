@@ -63,24 +63,27 @@
     display: flex;
     }
 
-  @media screen and (min-width: $width-small) {
+  @media screen and (min-width: $width-medium) {
     display: none;
     }
   }
 
   .c-sm-nav__list {
     font-weight: $font-weight-bold;
-    font-size: $font-size-text-large;
+    font-size: $font-size-text-x-large;
     line-height: $line-height-tall + 0.5;
     flex-direction: column;
     justify-content: center;
     width: 50%;
+    padding: 1%;
+    border-bottom: 4px solid;
     }
 
 .c-sm-nav__anchor {
   justify-content: flex-end;
   width: 50%;
   text-align: right;
+  border-bottom: 4px solid;
   }
 
 .c-sm-nav__list--active {
