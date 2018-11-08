@@ -2,19 +2,16 @@
 .c-hero {
   display: flex;
   flex-wrap: wrap;
-  border: 2px red solid;
   position: relative;
   align-items: flex-end;
 }
 
 .c-hero__cta {
-  font-weight: $font-weight-bold;
-  border: 2px red solid;
+  font-weight: $font-weight-extrabold;
   color: $color-white;
   position: absolute;
   z-index: 1;
-  left: 20px;
-  bottom: 20px;
+  left: 40px;
   width: 20%;
 
   @media screen and (min-width: 320px) {
@@ -24,11 +21,13 @@
   @media screen and (min-width: 768px) {
     font-size: $font-size-heading-xx-large;
     display: flex;
+    bottom: 20px;
     }
 
     @media screen and (min-width: 800px) {
     font-size: $font-size-heading-xxx-large;
     display: flex;
+    bottom: 45px;
     }
 }
 
