@@ -7,7 +7,7 @@
   background-color: $color-black-secondary;
   position: absolute;
   z-index: 1;
-  border: 2px blue solid;
+  //border: 2px blue solid;
   height: 50px;
   width: 100%;
 
@@ -26,7 +26,7 @@
   align-items: center;
   height: 50px;
   padding-left: 2%;
-  border: 2px red solid;
+  //border: 2px red solid;
   position: absolute;
   z-index: 2;
   justify-content: space-between;
@@ -59,7 +59,7 @@
 
 //sm navigation
 .c-sm-nav {
-  border: 2px red solid;
+  //border: 2px red solid;
   display: flex;
   padding: 20px;
 
@@ -83,7 +83,7 @@
     }
 
 .c-sm-nav__anchor {
-  border: 2px blue solid;
+  //border: 2px blue solid;
   justify-content: flex-end;
   width: 50%;
   text-align: right;

@@ -14,8 +14,9 @@
 
 .flexwrapper__menu {
   display: visible;
+  justify-content: flex-end;
 
-  @media screen and (min-width: $width-small - 51) {
+  @media screen and (min-width: $width-medium) {
     display: none;
   }
 }
@@ -24,4 +25,13 @@
   list-style: none;
   line-height: $line-height-heading;
   margin: $spacing-small;
+
+  @media screen and (min-width: $width-x-small) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $width-medium) {
+    justify-content: flex-end;
+    width: 20%;
+  }
 }
