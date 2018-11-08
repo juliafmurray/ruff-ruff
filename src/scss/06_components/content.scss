@@ -2,7 +2,7 @@
 .c-content {
   display: flex;
   font-weight: $font-weight-light;
-
+  padding: 3%;
 
     @media screen and (min-width: $width-x-small) {
       flex-wrap: wrap;
@@ -10,18 +10,19 @@
 
     @media screen and (min-width: $width-large){
       flex-wrap: nowrap;
-      padding: 3%;
+
     }
 }
 
 .c-content__intro {
+  border: 1px red solid;
+
     @media screen and (min-width: $width-x-small) {
       width: 100%;
     }
 
     @media screen and (min-width: $width-large){
       width: 50%;
-      border: 1px red solid;
       justify-content: space-between;
     }
 
@@ -29,17 +30,49 @@
   }
 
 .c-content__list {
-line-height: $line-height-text;
-font-size: $font-size-text-x-large;
-font-weight: $font-weight-regular;
-color: $color-primary;
+  border: 1px red solid;
+  line-height: $line-height-text;
+  font-size: $font-size-text-x-large;
+  font-weight: $font-weight-regular;
+  color: $color-primary;
+
+
+
   @media screen and (min-width: $width-x-small) {
     width: 100%;
+    padding-top: 5%;
   }
 
   @media screen and (min-width: $width-large){
     width: 50%;
     padding: 2%;
-    border: 1px red solid;
+  }
+}
+
+.c-content__list--item {
+  @media screen and (min-width: $width-x-small) {
+    padding-bottom: 5%;
+  }
+
+  @media screen and (min-width: $width-x-small + 320px) {
+    padding-bottom: 2%;
+  }
+
+
+  @media screen and (min-width: $width-medium) {
+    padding-bottom: 1%;
+  }
+
+
+}
+
+.c-content__heading {
+  color: $color-primary;
+  font-size: $font-size-heading-x-large;
+  font-weight: $font-weight-extrabold;
+  padding: 2% 0;
+
+  @media screen and (min-width: $width-medium) {
+    display: none;
   }
 }
