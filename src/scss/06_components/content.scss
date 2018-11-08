@@ -1,9 +1,8 @@
 
 .c-content {
   display: flex;
-  padding: 20px 100px;
-  justify-content: flex-start;
   font-weight: $font-weight-light;
+
 
     @media screen and (min-width: $width-x-small) {
       flex-wrap: wrap;
@@ -11,6 +10,7 @@
 
     @media screen and (min-width: $width-large){
       flex-wrap: nowrap;
+      padding: 3%;
     }
 }
 
@@ -21,6 +21,8 @@
 
     @media screen and (min-width: $width-large){
       width: 50%;
+      border: 1px red solid;
+      justify-content: space-between;
     }
 
 
@@ -37,6 +39,7 @@ color: $color-primary;
 
   @media screen and (min-width: $width-large){
     width: 50%;
-    padding-left: 5%;
+    padding: 2%;
+    border: 1px red solid;
   }
 }
