@@ -1,58 +1,57 @@
 .c-footer__social {
   display: flex;
-  //border: 1px green solid;
+
 
   @media screen and (min-width: $width-x-small) {
     justify-content: flex-start;
     width: 100%;
+    padding-top: 20px;
     }
 
   @media screen and (min-width: $width-medium) {
     justify-content: flex-end;
     width: 50%;
     order: 2;
-
     }
 }
 
 .c-footer__social--cta {
-  //border: 1px blue solid;
   margin-right: 1%;
   font-weight: $font-weight-bold;
   font-size: $font-size-text-x-large;
 }
 
 .c-footer__social--icons {
-  //border: 1px orange solid;
-
   @media screen and (min-width: $width-medium) {
     justify-content: flex-end;
   }
 }
 
 .c-footer__copyright {
-display: flex;
-//padding: 1%;
-font-weight: $font-weight-light;
-//border: 1px blue solid;
+  display: flex;
+  padding-top: 20px;
+  font-weight: $font-weight-light;
 
-@media screen and (min-width: $width-x-small) {
-  width: 100%;
-  }
+  @media screen and (min-width: $width-x-small) {
+    width: 100%;
+    }
 
-@media screen and (min-width: $width-medium) {
-  width: 50%;
-  }
+  @media screen and (min-width: $width-medium) {
+    width: 50%;
+    }
 }
 
 .c-footer {
   display: flex;
-  padding: 1%;
+  padding: 0 4% 0 4% ;
   @media screen and (min-width: $width-x-small) {
     flex-wrap: wrap;
+    padding-bottom: 5%;
+    border-top: 4px black solid;
   }
 
   @media screen and (min-width: $width-medium) {
     flex-wrap: nowrap;
+    border-top: 0;
   }
 }

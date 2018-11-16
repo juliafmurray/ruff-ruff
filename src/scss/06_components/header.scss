@@ -1,4 +1,4 @@
-.flexwrapper {
+.c-flexwrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -8,20 +8,63 @@
   }
 }
 
-.flexwrapper__logo {
+.c-flexwrapper__logo {
   margin: $spacing-small;
 }
 
-.flexwrapper__menu {
+.c-flexwrapper__menu {
   display: visible;
+  justify-content: flex-end;
+  padding: 10px 10px 0 0;
 
-  @media screen and (min-width: $width-small - 51) {
+  @media screen and (min-width: $width-medium) {
     display: none;
   }
 }
 
-.flexwrapper__contactlist {
+.c-flexwrapper__contactlist {
   list-style: none;
-  line-height: $line-height-heading;
   margin: $spacing-small;
+  position: relative;
+  padding-left: $spacing-large;
+  line-height: 1.75;
+  //border: green 1px solid;
+
+  @media screen and (min-width: $width-x-small) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $width-medium) {
+    justify-content: flex-end;
+    width: 20%;
+  }
+}
+
+.c-flexwrapper__contactlist--item1 {
+  &:before {
+    content: url('../assets/phone.svg');
+    //border: red 1px solid;
+    left: 0;
+    position: absolute;
+    padding: 1px 0 2px 0;
+  }
+}
+
+.c-flexwrapper__contactlist--item2 {
+  &:before {
+    content: url('../assets/location.svg');
+    //border: red 1px solid;
+    left: 4px;
+    position: absolute;
+    padding: 3px 0 0 0;
+  }
+}
+
+.c-flexwrapper__contactlist--item3 {
+  &:before {
+    content: url('../assets/clock.svg');
+    left: 0;
+    position: absolute;
+    padding: 4px 0 0 0;
+  }
 }

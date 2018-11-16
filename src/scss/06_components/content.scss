@@ -1,9 +1,8 @@
 
 .c-content {
   display: flex;
-  padding: 20px 100px;
-  justify-content: flex-start;
   font-weight: $font-weight-light;
+  padding: 3% 3% 10% 3% ;
 
     @media screen and (min-width: $width-x-small) {
       flex-wrap: wrap;
@@ -15,28 +14,69 @@
 }
 
 .c-content__intro {
+    padding-right: 2%;
     @media screen and (min-width: $width-x-small) {
       width: 100%;
+      font-size: $font-size-text-x-large;
     }
 
-    @media screen and (min-width: $width-large){
+    @media screen and (min-width: $width-large) {
       width: 50%;
+      font-size: $font-size-text-x-large;
     }
-
-
   }
 
 .c-content__list {
-line-height: $line-height-text;
-font-size: $font-size-text-x-large;
-font-weight: $font-weight-regular;
-color: $color-primary;
+  line-height: $line-height-text;
+  font-weight: $font-weight-regular;
+  color: $color-primary;
+  font-size: $font-size-text-x-large;
+  position: relative;
+  padding-left: $spacing-medium;
+  padding-top: 6%;
+
+
   @media screen and (min-width: $width-x-small) {
     width: 100%;
+
+  }
+
+  @media screen and (min-width: $width-medium) {
+    padding-top: 0;
   }
 
   @media screen and (min-width: $width-large){
     width: 50%;
-    padding-left: 5%;
+    padding: 0;
+    }
+}
+
+.c-content__list--item {
+  &:before {
+    content: url('../assets/paw.svg');
+    position: absolute;
+    left: 0;
+
+  }
+  @media screen and (min-width: $width-x-small) {
+    padding-left: 15px;
+    padding-bottom: 5px;
+  }
+
+
+  @media screen and (min-width: $width-medium) {
+    padding-left: 25px;
+    padding-bottom: 5px;
+  }
+}
+
+.c-content__heading {
+  color: $color-primary;
+  font-size: $font-size-heading-x-large;
+  font-weight: $font-weight-extrabold;
+  padding: 2% 0;
+
+  @media screen and (min-width: $width-medium) {
+    display: none;
   }
 }
