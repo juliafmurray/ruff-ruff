@@ -69,17 +69,14 @@
 .c-contact__form--button {
   @media screen and (min-width: $width-x-small) {
     width: 70%;
-    border: 1px red solid;
     }
 
   @media screen and (min-width: $width-medium) {
     width: 30%;
-    border: 1px red solid;
     }
 
     @media screen and (min-width: $width-large) {
-      width: 40%;
-      border: 1px red solid;
+      width: 50%;
       }
 
   font-size: $font-size-text-xx-large;
