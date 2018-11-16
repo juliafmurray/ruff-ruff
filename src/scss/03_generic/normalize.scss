@@ -4,9 +4,9 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-::*,
-::*:before,
-::*:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -16,12 +16,12 @@ body {
   width: $content-width;
 }
 
-:article,
+article,
 aside,
-:footer,
-:header,
-:nav,
-:section {
+footer,
+header,
+nav,
+section {
   display: block;
 }
 
