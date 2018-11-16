@@ -1,18 +1,17 @@
 .c-footer__social {
   display: flex;
-  padding-top: 7px;
-  //border: 1px green solid;
+
 
   @media screen and (min-width: $width-x-small) {
     justify-content: flex-start;
     width: 100%;
+    padding-top: 20px;
     }
 
   @media screen and (min-width: $width-medium) {
     justify-content: flex-end;
     width: 50%;
     order: 2;
-
     }
 }
 
@@ -29,18 +28,17 @@
 }
 
 .c-footer__copyright {
-display: flex;
-padding-top: 10px;
-font-weight: $font-weight-light;
-//border: 1px blue solid;
+  display: flex;
+  padding-top: 20px;
+  font-weight: $font-weight-light;
 
-@media screen and (min-width: $width-x-small) {
-  width: 100%;
-  }
+  @media screen and (min-width: $width-x-small) {
+    width: 100%;
+    }
 
-@media screen and (min-width: $width-medium) {
-  width: 50%;
-  }
+  @media screen and (min-width: $width-medium) {
+    width: 50%;
+    }
 }
 
 .c-footer {
@@ -49,9 +47,11 @@ font-weight: $font-weight-light;
   @media screen and (min-width: $width-x-small) {
     flex-wrap: wrap;
     padding-bottom: 5%;
+    border-top: 4px black solid;
   }
 
   @media screen and (min-width: $width-medium) {
     flex-wrap: nowrap;
+    border-top: 0;
   }
 }

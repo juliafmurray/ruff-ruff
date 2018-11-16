@@ -76,14 +76,13 @@
     justify-content: center;
     width: 50%;
     padding: 1%;
-    border-bottom: 4px solid;
     }
 
 .c-sm-nav__anchor {
   justify-content: flex-end;
+  padding-top: 20px;
   width: 50%;
   text-align: right;
-  border-bottom: 4px solid;
   }
 
 .c-sm-nav__list--active {
