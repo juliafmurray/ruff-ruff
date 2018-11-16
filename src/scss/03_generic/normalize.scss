@@ -1,109 +1,60 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
-
 html {
   box-sizing: border-box;
-  line-height: 1.15; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  //-webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
 }
 
-*,
-*:before,
-*:after {
+::*,
+::*:before,
+::*:after {
   box-sizing: inherit;
 }
-
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers (opinionated).
- */
 
 body {
   background-color: $color-background;
   margin: 0;
-  width: $content-width
+  width: $content-width;
 }
 
-/**
- * Add the correct display in IE 9-.
- */
-
-article,
+:article,
 aside,
-footer,
-header,
-nav,
-section {
+:footer,
+:header,
+:nav,
+:section {
   display: block;
 }
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
 
 h1 {
   font-size: 2em;
-  margin-block-start: 0;
   margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 h2 {
+  margin-block-end: 0;
   margin-block-start: 0;
-margin-block-end: 0;
 }
-/* Grouping content
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
 
 figcaption,
 figure,
-main { /* 1 */
+main {
   display: block;
 }
-
-/**
- * Add the correct margin in IE 8.
- */
 
 figure {
   margin: 1em 40px;
 }
 
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
 p {
@@ -114,21 +65,14 @@ p {
   margin-inline-end: 0;
 }
 
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-
 a {
-  background-color: transparent; /* 1 */
-  -webkit-text-decoration-skip: objects; /* 2 */
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
 }
 
-ul, menu, dir {
+ul,
+menu,
+dir {
     display: block;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -138,67 +82,42 @@ ul, menu, dir {
     list-style: none;
 }
 
-/**
- * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
 
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-
 b,
 strong {
   font-weight: inherit;
 }
 
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
 
 b,
 strong {
   font-weight: bolder;
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
-/**
- * Add the correct font style in Android 4.3-.
- */
 
 dfn {
   font-style: italic;
 }
 
-/**
- * Add the correct background and color in IE 9-.
- */
 
 mark {
   background-color: #ff0;
   color: #000;
 }
 
-/**
- * Add the correct font size in all browsers.
- */
 
 small {
   font-size: 80%;
@@ -246,30 +165,14 @@ audio:not([controls]) {
   height: 0;
 }
 
-/**
- * Remove the border on images inside links in IE 10-.
- */
-
 img {
   border-style: none;
   display: block;
 }
 
-/**
- * Hide the overflow in IE.
- */
-
 svg:not(:root) {
   overflow: visible;
 }
-
-/* Forms
-   ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
 
 button,
 input,
@@ -284,31 +187,17 @@ textarea {
   height: 100%;
 }
 
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
 
 button,
 input { /* 1 */
   overflow: visible;
 }
 
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
 button,
 select { /* 1 */
   text-transform: none;
 }
 
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
 
 button,
 html [type="button"], /* 1 */

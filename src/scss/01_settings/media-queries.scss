@@ -28,12 +28,3 @@ $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max
 
 $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
 $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
-
-
-// h1 {
-//   font-size: 1.2rem;
-//
-//   @media #{$medium-up} {
-//     font-size: 1.4rem;
-//   }
-// }
